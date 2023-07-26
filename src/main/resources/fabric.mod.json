@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "jump_sounds",
+  "version": "${version}",
+  "name": "Jump Sounds",
+  "description": "Adds the jumping and landing sounds from Bedrock Edition!",
+  "authors": [
+    "Merp"
+  ],
+  "contact": {
+    "repo": "https://github.com/MerpisMe/Jump-Sounds"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/jump_sounds/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.merp.jumpsounds.client.JumpSoundsClient"
+    ]
+  },
+  "mixins": [
+    "jump-sounds.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "conflicts": {
+    "presence-footsteps": "*"
+  }
+}

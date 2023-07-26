@@ -1,0 +1,65 @@
+{
+	"block.grass.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/grass1",
+			"jump/grass2",
+			"jump/grass3",
+			"jump/grass4"
+		]
+	},
+	"block.gravel.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/gravel1",
+			"jump/gravel2",
+			"jump/gravel3",
+			"jump/gravel4"
+		]
+	},
+	"block.sand.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/sand1",
+			"jump/sand2",
+			"jump/sand3",
+			"jump/sand4"
+		]
+	},
+	"block.snow.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/snow1",
+			"jump/snow2",
+			"jump/snow3",
+			"jump/snow4"
+		]
+	},
+	"block.stone.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/stone1",
+			"jump/stone2",
+			"jump/stone3",
+			"jump/stone4"
+		]
+	},
+	"block.wood.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/wood1",
+			"jump/wood2",
+			"jump/wood3",
+			"jump/wood4"
+		]
+	},
+	"block.wool.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/cloth1",
+			"jump/cloth2",
+			"jump/cloth3",
+			"jump/cloth4"
+		]
+	}
+}
