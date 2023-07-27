@@ -281,6 +281,15 @@
 			"jump/sand4"
 		]
 	},
+	"block.scaffolding.fall": {
+		"replace": true,
+		"sounds": [
+			"block/scaffolding/jump1",
+			"block/scaffolding/jump2",
+			"block/scaffolding/jump3",
+			"block/scaffolding/jump4"
+		]
+	},
 	"block.sculk.fall": {
 		"replace": true,
 		"sounds": [
