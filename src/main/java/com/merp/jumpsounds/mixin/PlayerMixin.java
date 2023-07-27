@@ -16,8 +16,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class PlayerMixin extends LivingEntity {
 
 	@Environment(EnvType.CLIENT)
-	protected PlayerMixin(EntityType<? extends LivingEntity> entityType, Level world) {
-		super(entityType, world);
+	protected PlayerMixin(EntityType<? extends LivingEntity> entityType, Level level) {
+		super(entityType, level);
 	}
 
 	@Inject(method = "jumpFromGround", at = @At("TAIL"))

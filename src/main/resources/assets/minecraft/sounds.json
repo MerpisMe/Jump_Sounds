@@ -1,4 +1,178 @@
 {
+	"block.amethyst_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/amethyst/jump1",
+			"block/amethyst/jump2",
+			"block/amethyst/jump3",
+			"block/amethyst/jump4",
+			"block/amethyst/jump5",
+			"block/amethyst/jump6",
+			"block/amethyst/jump7",
+			"block/amethyst/jump8",
+			"block/amethyst/jump9",
+			"block/amethyst/jump10",
+			"block/amethyst/jump11",
+			"block/amethyst/jump12",
+			"block/amethyst/jump14"
+		]
+	},
+	"block.amethyst_cluster.fall": {
+		"replace": true,
+		"sounds": [
+			"block/amethyst/jump1",
+			"block/amethyst/jump2",
+			"block/amethyst/jump3",
+			"block/amethyst/jump4",
+			"block/amethyst/jump5",
+			"block/amethyst/jump6",
+			"block/amethyst/jump7",
+			"block/amethyst/jump8",
+			"block/amethyst/jump9",
+			"block/amethyst/jump10",
+			"block/amethyst/jump11",
+			"block/amethyst/jump12",
+			"block/amethyst/jump14"
+		]
+	},
+	"block.anvil.fall": {
+		"replace": true,
+		"sounds": [
+			"block/metal/jump1",
+			"block/metal/jump2",
+			"block/metal/jump3",
+			"block/metal/jump4"
+		]
+	},
+	"block.azalea_leaves.fall": {
+		"replace": true,
+		"sounds": [
+			"block/azalea_leaves/jump1",
+			"block/azalea_leaves/jump2",
+			"block/azalea_leaves/jump3",
+			"block/azalea_leaves/jump4"
+		]
+	},
+	"block.bamboo_wood.fall": {
+		"replace": true,
+		"sounds": [
+			"block/bamboo_wood/jump1",
+			"block/bamboo_wood/jump2",
+			"block/bamboo_wood/jump3",
+			"block/bamboo_wood/jump4"
+		]
+	},
+	"block.basalt.fall": {
+		"replace": true,
+		"sounds": [
+			"block/basalt/jump1",
+			"block/basalt/jump2",
+			"block/basalt/jump3",
+			"block/basalt/jump4"
+		]
+	},
+	"block.calcite.fall": {
+		"replace": true,
+		"sounds": [
+			"block/calcite/jump1",
+			"block/calcite/jump2",
+			"block/calcite/jump3",
+			"block/calcite/jump4"
+		]
+	},
+	"block.cherry_leaves.fall": {
+		"replace": true,
+		"sounds": [
+			"block/cherry_leaves/jump1",
+			"block/cherry_leaves/jump2",
+			"block/cherry_leaves/jump3",
+			"block/cherry_leaves/jump4"
+		]
+	},
+	"block.cherry_wood.fall": {
+		"replace": true,
+		"sounds": [
+			"block/cherry_wood/jump1",
+			"block/cherry_wood/jump2",
+			"block/cherry_wood/jump3",
+			"block/cherry_wood/jump4"
+		]
+	},
+	"block.copper.fall": {
+		"replace": true,
+		"sounds": [
+			"block/copper/jump1",
+			"block/copper/jump2",
+			"block/copper/jump3",
+			"block/copper/jump4"
+		]
+	},
+	"block.deepslate.fall": {
+		"replace": true,
+		"sounds": [
+			"block/deepslate/jump1",
+			"block/deepslate/jump2",
+			"block/deepslate/jump3",
+			"block/deepslate/jump4"
+		]
+	},
+	"block.deepslate_bricks.fall": {
+		"replace": true,
+		"sounds": [
+			"block/deepslate_bricks/jump1",
+			"block/deepslate_bricks/jump2",
+			"block/deepslate_bricks/jump3",
+			"block/deepslate_bricks/jump4"
+		]
+	},
+	"block.deepslate_tiles.fall": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "block/deepslate_bricks/jump1",
+				"pitch": 1.3
+			},
+			{
+				"name": "block/deepslate_bricks/jump2",
+				"pitch": 1.3
+			},
+			{
+				"name": "block/deepslate_bricks/jump3",
+				"pitch": 1.3
+			},
+			{
+				"name": "block/deepslate_bricks/jump4",
+				"pitch": 1.3
+			}
+		]
+	},
+	"block.dripstone_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/dripstone/jump1",
+			"block/dripstone/jump2",
+			"block/dripstone/jump3",
+			"block/dripstone/jump4"
+		]
+	},
+	"block.pointed_dripstone.fall": {
+		"replace": true,
+		"sounds": [
+			"block/dripstone/jump1",
+			"block/dripstone/jump2",
+			"block/dripstone/jump3",
+			"block/dripstone/jump4"
+		]
+	},
+	"block.glass.fall": {
+		"replace": true,
+		"sounds": [
+			"jump/stone1",
+			"jump/stone2",
+			"jump/stone3",
+			"jump/stone4"
+		]
+	},
 	"block.grass.fall": {
 		"replace": true,
 		"sounds": [
@@ -17,6 +191,87 @@
 			"jump/gravel4"
 		]
 	},
+	"block.ladder.fall": {
+		"replace": true,
+		"sounds": [
+			"block/ladder/jump1",
+			"block/ladder/jump2",
+			"block/ladder/jump3",
+			"block/ladder/jump4"
+		]
+	},
+	"block.metal.fall": {
+		"replace": true,
+		"sounds": [
+			"block/metal/jump1",
+			"block/metal/jump2",
+			"block/metal/jump3",
+			"block/metal/jump4"
+		]
+	},
+	"block.moss.fall": {
+		"replace": true,
+		"sounds": [
+			"block/moss/jump1",
+			"block/moss/jump2",
+			"block/moss/jump3",
+			"block/moss/jump4"
+		]
+	},
+	"block.moss_carpet.fall": {
+		"replace": true,
+		"sounds": [
+			"block/moss_carpet/jump1",
+			"block/moss_carpet/jump2",
+			"block/moss_carpet/jump3",
+			"block/moss_carpet/jump4"
+		]
+	},
+	"block.nether_bricks.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_bricks/jump1",
+			"block/nether_bricks/jump2",
+			"block/nether_bricks/jump3",
+			"block/nether_bricks/jump4"
+		]
+	},
+	"block.nether_ore.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_ore/jump1",
+			"block/nether_ore/jump2",
+			"block/nether_ore/jump3",
+			"block/nether_ore/jump4"
+		]
+	},
+	"block.nether_wood.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood/jump1",
+			"block/nether_wood/jump2",
+			"block/nether_wood/jump3",
+			"block/nether_wood/jump4"
+		]
+	},
+	"block.netherite_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/netherite/jump1",
+			"block/netherite/jump2",
+			"block/netherite/jump3",
+			"block/netherite/jump4"
+		]
+	},
+	"block.netherrack.fall": {
+		"replace": true,
+		"sounds": [
+			"block/netherrack/jump1",
+			"block/netherrack/jump2",
+			"block/netherrack/jump3",
+			"block/netherrack/jump4"
+		]
+	},
 	"block.sand.fall": {
 		"replace": true,
 		"sounds": [
@@ -24,6 +279,60 @@
 			"jump/sand2",
 			"jump/sand3",
 			"jump/sand4"
+		]
+	},
+	"block.sculk.fall": {
+		"replace": true,
+		"sounds": [
+			"block/sculk/jump1",
+			"block/sculk/jump2",
+			"block/sculk/jump3",
+			"block/sculk/jump4"
+		]
+	},
+	"block.sculk_catalyst.fall": {
+		"replace": true,
+		"sounds": [
+			"block/sculk_catalyst/jump1",
+			"block/sculk_catalyst/jump2",
+			"block/sculk_catalyst/jump3",
+			"block/sculk_catalyst/jump4"
+		]
+	},
+	"block.sculk_sensor.fall": {
+		"replace": true,
+		"sounds": [
+			"block/sculk/jump1",
+			"block/sculk/jump2",
+			"block/sculk/jump3",
+			"block/sculk/jump4"
+		]
+	},
+	"block.sculk_shrieker.fall": {
+		"replace": true,
+		"sounds": [
+			"block/sculk/jump1",
+			"block/sculk/jump2",
+			"block/sculk/jump3",
+			"block/sculk/jump4"
+		]
+	},
+	"block.sculk_vein.fall": {
+		"replace": true,
+		"sounds": [
+			"block/sculk/jump1",
+			"block/sculk/jump2",
+			"block/sculk/jump3",
+			"block/sculk/jump4"
+		]
+	},
+	"block.slime_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/slime_block/jump1",
+			"block/slime_block/jump2",
+			"block/slime_block/jump3",
+			"block/slime_block/jump4"
 		]
 	},
 	"block.snow.fall": {
@@ -35,6 +344,15 @@
 			"jump/snow4"
 		]
 	},
+	"block.stem.fall": {
+		"replace": true,
+		"sounds": [
+			"block/stem/jump1",
+			"block/stem/jump2",
+			"block/stem/jump3",
+			"block/stem/jump4"
+		]
+	},
 	"block.stone.fall": {
 		"replace": true,
 		"sounds": [
@@ -42,6 +360,15 @@
 			"jump/stone2",
 			"jump/stone3",
 			"jump/stone4"
+		]
+	},
+	"block.tuff.fall": {
+		"replace": true,
+		"sounds": [
+			"block/tuff/jump1",
+			"block/tuff/jump2",
+			"block/tuff/jump3",
+			"block/tuff/jump4"
 		]
 	},
 	"block.wood.fall": {
