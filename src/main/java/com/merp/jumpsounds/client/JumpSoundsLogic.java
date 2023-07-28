@@ -5,53 +5,67 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import org.spongepowered.asm.mixin.Unique;
 
 public class JumpSoundsLogic {
 
-    public static void jump(LivingEntity entity) {
+    public static float volume;
 
-        BlockPos blockPos = entity.blockPosition();
-        BlockState state = entity.level().getBlockState(blockPos);
-
-        BlockState primaryState = state.is(BlockTags.INSIDE_STEP_SOUND_BLOCKS) ? state : entity.getBlockStateOn();
-        BlockState secondaryState = entity.level().getBlockState(blockPos.below());
-
+    public static void jump(LivingEntity entity, BlockPos blockPos, BlockState primaryState) {
         if (entity.onGround() && !primaryState.isAir()) {
-            if (primaryState.is(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
-                playJumpSound(primaryState,1,1f, entity);
-                playJumpSound(secondaryState,0.5f,0.8f, entity);
-            } else {
-                playJumpSound(primaryState,1,1f, entity);
-            }
+            volume = 0;
+            soundController(entity, blockPos, primaryState);
         }
     }
 
-    public static void land(LivingEntity entity) {
+    public static void land(LivingEntity entity, BlockPos blockPos, BlockState primaryState) {
+        double yDelta = entity.yOld - entity.getY();
+        if (entity.onGround() && !primaryState.isAir() && yDelta > 0) {
+            if (yDelta == 0.0625 || yDelta == 0.04659999847412166) {
+                return;
+            }
+            soundController(entity, blockPos, primaryState);
+        }
+    }
 
-        BlockPos blockPos = entity.blockPosition();
-        BlockState state = entity.level().getBlockState(blockPos);
-
-        BlockState primaryState = state.is(BlockTags.INSIDE_STEP_SOUND_BLOCKS) ? state : entity.getBlockStateOn();
-        BlockState secondaryState = entity.level().getBlockState(blockPos.below());
-
-        if (entity.onGround() && !primaryState.isAir()) {
-            if (entity.getPosition(0).y() > entity.getPosition(1).y()) {
-                if (primaryState.is(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
-                    playJumpSound(primaryState,1,0.9f, entity);
-                    playJumpSound(secondaryState,0.5f,0.7f, entity);
+    public static void soundController(LivingEntity entity, BlockPos blockPos, BlockState blockState) {
+        if (entity.isInWater()) {
+            playMuffledJumpSound(entity, blockState);
+        } else {
+            BlockPos blockPos2 = JumpSoundsLogic.getPrimaryJumpSoundBlockPos(entity, blockPos);
+            if (!blockPos.equals(blockPos2)) {
+                BlockState blockState2 = entity.level().getBlockState(blockPos2);
+                if (blockState2.is(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
+                    playCombinationJumpSounds(entity, blockState2, blockState);
                 } else {
-                    playJumpSound(primaryState,1,0.9f, entity);
+                    playJumpSound(entity, blockState2);
                 }
+            } else {
+                playJumpSound(entity, blockState);
             }
         }
     }
 
-    @Unique
-    protected static void playJumpSound(BlockState state, float volMult, float pitchMult, LivingEntity entity) {
-        SoundType soundType = state.getSoundType();
-        if (!entity.isInWaterOrBubble()) {
-            entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.1F * volMult, soundType.getPitch() * pitchMult);
+    public static BlockPos getPrimaryJumpSoundBlockPos(LivingEntity entity, BlockPos blockPos){
+        BlockPos blockPos2 = blockPos.above();
+        BlockState blockState = entity.level().getBlockState(blockPos2);
+        if (blockState.is(BlockTags.INSIDE_STEP_SOUND_BLOCKS) || blockState.is(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
+            return blockPos2;
         }
+        return blockPos;
+    }
+
+    protected static void playCombinationJumpSounds (LivingEntity entity, BlockState blockState, BlockState blockState2) {
+        playJumpSound(entity, blockState);
+        playMuffledJumpSound(entity, blockState2);
+    }
+
+    protected static void playMuffledJumpSound (LivingEntity entity, BlockState state){
+        SoundType soundType = state.getSoundType();
+        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.033F, soundType.getPitch() * 0.8f);
+    }
+
+    protected static void playJumpSound (LivingEntity entity, BlockState state) {
+        SoundType soundType = state.getSoundType();
+        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.1F, soundType.getPitch());
     }
 }
