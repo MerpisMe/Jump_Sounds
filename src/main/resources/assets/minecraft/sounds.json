@@ -44,6 +44,15 @@
 			"block/metal/jump4"
 		]
 	},
+	"block.azalea.fall": {
+		"replace": true,
+		"sounds": [
+			"block/azalea/jump1",
+			"block/azalea/jump2",
+			"block/azalea/jump3",
+			"block/azalea/jump4"
+		]
+	},
 	"block.azalea_leaves.fall": {
 		"replace": true,
 		"sounds": [
@@ -62,6 +71,15 @@
 			"block/bamboo_wood/jump4"
 		]
 	},
+	"block.big_dripleaf.fall": {
+		"replace": true,
+		"sounds": [
+			"block/big_dripleaf/jump1",
+			"block/big_dripleaf/jump2",
+			"block/big_dripleaf/jump3",
+			"block/big_dripleaf/jump4"
+		]
+	},
 	"block.basalt.fall": {
 		"replace": true,
 		"sounds": [
@@ -71,6 +89,15 @@
 			"block/basalt/jump4"
 		]
 	},
+	"block.bone_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/bone_block/jump1",
+			"block/bone_block/jump2",
+			"block/bone_block/jump3",
+			"block/bone_block/jump4"
+		]
+	},
 	"block.calcite.fall": {
 		"replace": true,
 		"sounds": [
@@ -78,6 +105,15 @@
 			"block/calcite/jump2",
 			"block/calcite/jump3",
 			"block/calcite/jump4"
+		]
+	},
+	"block.candle.fall": {
+		"replace": true,
+		"sounds": [
+			"block/candle/jump1",
+			"block/candle/jump2",
+			"block/candle/jump3",
+			"block/candle/jump4"
 		]
 	},
 	"block.cherry_leaves.fall": {
@@ -98,6 +134,15 @@
 			"block/cherry_wood/jump4"
 		]
 	},
+	"block.chiseled_bookshelf.fall": {
+		"replace": true,
+		"sounds": [
+			"block/chiseled_bookshelf/jump1",
+			"block/chiseled_bookshelf/jump2",
+			"block/chiseled_bookshelf/jump3",
+			"block/chiseled_bookshelf/jump4"
+		]
+	},
 	"block.copper.fall": {
 		"replace": true,
 		"sounds": [
@@ -105,6 +150,24 @@
 			"block/copper/jump2",
 			"block/copper/jump3",
 			"block/copper/jump4"
+		]
+	},
+	"block.coral.fall": {
+		"replace": true,
+		"sounds": [
+			"block/jump/coral1",
+			"block/jump/coral2",
+			"block/jump/coral3",
+			"block/jump/coral4"
+		]
+	},
+	"block.decorated_pot.fall": {
+		"replace": true,
+		"sounds": [
+			"block/decorated_pot/jump1",
+			"block/decorated_pot/jump2",
+			"block/decorated_pot/jump3",
+			"block/decorated_pot/jump4"
 		]
 	},
 	"block.deepslate.fall": {
@@ -155,6 +218,24 @@
 			"block/dripstone/jump4"
 		]
 	},
+	"block.flowering_azalea.fall": {
+		"replace": true,
+		"sounds": [
+			"block/azalea/jump1",
+			"block/azalea/jump2",
+			"block/azalea/jump3",
+			"block/azalea/jump4"
+		]
+	},
+	"block.froglight.fall": {
+		"replace": true,
+		"sounds": [
+			"block/froglight/jump1",
+			"block/froglight/jump2",
+			"block/froglight/jump3",
+			"block/froglight/jump4"
+		]
+	},
 	"block.pointed_dripstone.fall": {
 		"replace": true,
 		"sounds": [
@@ -162,6 +243,15 @@
 			"block/dripstone/jump2",
 			"block/dripstone/jump3",
 			"block/dripstone/jump4"
+		]
+	},
+	"block.gilded_blackstone.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_ore/jump1",
+			"block/nether_ore/jump2",
+			"block/nether_ore/jump3",
+			"block/nether_ore/jump4"
 		]
 	},
 	"block.glass.fall": {
@@ -200,6 +290,15 @@
 			"block/ladder/jump4"
 		]
 	},
+	"block.mangrove_roots.fall": {
+		"replace": true,
+		"sounds": [
+			"block/mangrove_roots/jump1",
+			"block/mangrove_roots/jump2",
+			"block/mangrove_roots/jump3",
+			"block/mangrove_roots/jump4"
+		]
+	},
 	"block.metal.fall": {
 		"replace": true,
 		"sounds": [
@@ -227,6 +326,33 @@
 			"block/moss_carpet/jump4"
 		]
 	},
+	"block.mud.fall": {
+		"replace": true,
+		"sounds": [
+			"block/mud/jump1",
+			"block/mud/jump2",
+			"block/mud/jump3",
+			"block/mud/jump4"
+		]
+	},
+	"block.mud_bricks.fall": {
+		"replace": true,
+		"sounds": [
+			"block/mud_bricks/jump1",
+			"block/mud_bricks/jump2",
+			"block/mud_bricks/jump3",
+			"block/mud_bricks/jump4"
+		]
+	},
+	"block.muddy_mangrove_roots.fall": {
+		"replace": true,
+		"sounds": [
+			"block/muddy_mangrove_roots/jump1",
+			"block/muddy_mangrove_roots/jump2",
+			"block/muddy_mangrove_roots/jump3",
+			"block/muddy_mangrove_roots/jump4"
+		]
+	},
 	"block.nether_bricks.fall": {
 		"replace": true,
 		"sounds": [
@@ -236,7 +362,7 @@
 			"block/nether_bricks/jump4"
 		]
 	},
-	"block.nether_ore.fall": {
+	"block.nether_gold_ore.fall": {
 		"replace": true,
 		"sounds": [
 			"block/nether_ore/jump1",
@@ -245,7 +371,7 @@
 			"block/nether_ore/jump4"
 		]
 	},
-	"block.nether_gold_ore.fall": {
+	"block.nether_ore.fall": {
 		"replace": true,
 		"sounds": [
 			"block/nether_ore/jump1",
@@ -279,6 +405,42 @@
 			"block/netherrack/jump2",
 			"block/netherrack/jump3",
 			"block/netherrack/jump4"
+		]
+	},
+	"block.nylium.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nylium/jump1",
+			"block/nylium/jump2",
+			"block/nylium/jump3",
+			"block/nylium/jump4"
+		]
+	},
+	"block.packed_mud.fall": {
+		"replace": true,
+		"sounds": [
+			"block/packed_mud/jump1",
+			"block/packed_mud/jump2",
+			"block/packed_mud/jump3",
+			"block/packed_mud/jump4"
+		]
+	},
+	"block.pink_petals.fall": {
+		"replace": true,
+		"sounds": [
+			"block/pink_petals/jump1",
+			"block/pink_petals/jump2",
+			"block/pink_petals/jump3",
+			"block/pink_petals/jump4"
+		]
+	},
+	"block.rooted_dirt.fall": {
+		"replace": true,
+		"sounds": [
+			"block/rooted_dirt/jump1",
+			"block/rooted_dirt/jump2",
+			"block/rooted_dirt/jump3",
+			"block/rooted_dirt/jump4"
 		]
 	},
 	"block.sand.fall": {
@@ -344,6 +506,15 @@
 			"block/sculk/jump4"
 		]
 	},
+	"block.shroomlight.fall": {
+		"replace": true,
+		"sounds": [
+			"block/netherrack/jump1",
+			"block/netherrack/jump2",
+			"block/netherrack/jump3",
+			"block/netherrack/jump4"
+		]
+	},
 	"block.slime_block.fall": {
 		"replace": true,
 		"sounds": [
@@ -353,6 +524,31 @@
 			"block/slime_block/jump4"
 		]
 	},
+	"block.small_dripleaf.fall": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "block/big_dripleaf/jump1",
+				"pitch": 1.2,
+				"volume": 0.9
+			},
+			{
+				"name": "block/big_dripleaf/jump2",
+				"pitch": 1.2,
+				"volume": 0.9
+			},
+			{
+				"name": "block/big_dripleaf/jump3",
+				"pitch": 1.2,
+				"volume": 0.9
+			},
+			{
+				"name": "block/big_dripleaf/jump4",
+				"pitch": 1.2,
+				"volume": 0.9
+			}
+		]
+	},
 	"block.snow.fall": {
 		"replace": true,
 		"sounds": [
@@ -360,6 +556,24 @@
 			"jump/snow2",
 			"jump/snow3",
 			"jump/snow4"
+		]
+	},
+	"block.soul_sand.fall": {
+		"replace": true,
+		"sounds": [
+			"block/soul_sand/jump1",
+			"block/soul_sand/jump2",
+			"block/soul_sand/jump3",
+			"block/soul_sand/jump4"
+		]
+	},
+	"block.soul_soil.fall": {
+		"replace": true,
+		"sounds": [
+			"block/soul_soil/jump1",
+			"block/soul_soil/jump2",
+			"block/soul_soil/jump3",
+			"block/soul_soil/jump4"
 		]
 	},
 	"block.stem.fall": {
@@ -380,6 +594,24 @@
 			"jump/stone4"
 		]
 	},
+	"block.suspicious_gravel.fall": {
+		"replace": true,
+		"sounds": [
+			"block/suspicious_gravel/jump1",
+			"block/suspicious_gravel/jump2",
+			"block/suspicious_gravel/jump3",
+			"block/suspicious_gravel/jump4"
+		]
+	},
+	"block.suspicious_sand.fall": {
+		"replace": true,
+		"sounds": [
+			"block/suspicious_sand/jump1",
+			"block/suspicious_sand/jump2",
+			"block/suspicious_sand/jump3",
+			"block/suspicious_sand/jump4"
+		]
+	},
 	"block.tuff.fall": {
 		"replace": true,
 		"sounds": [
@@ -387,6 +619,24 @@
 			"block/tuff/jump2",
 			"block/tuff/jump3",
 			"block/tuff/jump4"
+		]
+	},
+	"block.wart_block.fall": {
+		"replace": true,
+		"sounds": [
+			"block/netherwart/jump1",
+			"block/netherwart/jump2",
+			"block/netherwart/jump3",
+			"block/netherwart/jump4"
+		]
+	},
+	"block.roots.fall": {
+		"replace": true,
+		"sounds": [
+			"block/roots/jump1",
+			"block/roots/jump2",
+			"block/roots/jump3",
+			"block/roots/jump4"
 		]
 	},
 	"block.wood.fall": {
