@@ -15,9 +15,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
-
 @Mixin(Player.class)
 public abstract class PlayerMixin extends LivingEntity {
 
@@ -58,7 +55,7 @@ public abstract class PlayerMixin extends LivingEntity {
 	public void playStepSound(CallbackInfo ci) {
 		if (this.yOld - this.getY() > 0) {
 			// stops regular step sound from playing upon landing while moving
-			// like it works on bedrock edition
+			// like it works on bedrock edition, because it sounds better
 			ci.cancel();
 		}
 	}
