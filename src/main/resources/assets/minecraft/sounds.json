@@ -245,6 +245,15 @@
 			"block/nether_ore/jump4"
 		]
 	},
+	"block.nether_gold_ore.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_ore/jump1",
+			"block/nether_ore/jump2",
+			"block/nether_ore/jump3",
+			"block/nether_ore/jump4"
+		]
+	},
 	"block.nether_wood.fall": {
 		"replace": true,
 		"sounds": [
