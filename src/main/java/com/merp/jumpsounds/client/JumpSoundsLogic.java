@@ -8,24 +8,28 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class JumpSoundsLogic {
 
-    public static float volume;
-
     public static void jump(LivingEntity entity, BlockPos blockPos, BlockState primaryState) {
         if (entity.onGround() && !primaryState.isAir()) {
-            volume = 0;
             soundController(entity, blockPos, primaryState);
         }
     }
 
     public static void land(LivingEntity entity, BlockPos blockPos, BlockState primaryState) {
-        double yDelta = entity.yOld - entity.getY();
+        double yDelta = entity.yOld - entity.getY(); //used to test when the player lands
         if (entity.onGround() && !primaryState.isAir() && yDelta > 0) {
             if (yDelta == 0.0625 || yDelta == 0.04659999847412166) {
+                // skip sounds entirely if the y Delta matches 1 or 2 pixels in height
+                // it's hacky and awful but doing it this way is necessary with the
+                // y Delta implementation, else we risk losing landing sounds when
+                // walking off of multiples of 4 pixels in height
                 return;
             }
             soundController(entity, blockPos, primaryState);
         }
     }
+
+    // everything beyond this point has basically been interpreted directly
+    // from the code used for the new step sound system introduced in 1.20
 
     public static void soundController(LivingEntity entity, BlockPos blockPos, BlockState blockState) {
         if (entity.isInWater()) {
