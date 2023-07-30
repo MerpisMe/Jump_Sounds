@@ -62,6 +62,15 @@
 			"block/azalea_leaves/jump4"
 		]
 	},
+	"block.bamboo.fall": {
+		"replace": true,
+		"sounds": [
+			"block/bamboo/jump1",
+			"block/bamboo/jump2",
+			"block/bamboo/jump3",
+			"block/bamboo/jump4"
+		]
+	},
 	"block.bamboo_wood.fall": {
 		"replace": true,
 		"sounds": [
@@ -69,6 +78,15 @@
 			"block/bamboo_wood/jump2",
 			"block/bamboo_wood/jump3",
 			"block/bamboo_wood/jump4"
+		]
+	},
+	"block.bamboo_wood_hanging_sign.fall": {
+		"replace": true,
+		"sounds": [
+			"block/bamboo_wood_hanging_sign/jump1",
+			"block/bamboo_wood_hanging_sign/jump2",
+			"block/bamboo_wood_hanging_sign/jump3",
+			"block/bamboo_wood_hanging_sign/jump4"
 		]
 	},
 	"block.big_dripleaf.fall": {
@@ -132,6 +150,24 @@
 			"block/cherry_wood/jump2",
 			"block/cherry_wood/jump3",
 			"block/cherry_wood/jump4"
+		]
+	},
+	"block.cherry_wood_hanging_sign.fall": {
+		"replace": true,
+		"sounds": [
+			"block/cherry_wood_hanging_sign/jump1",
+			"block/cherry_wood_hanging_sign/jump2",
+			"block/cherry_wood_hanging_sign/jump3",
+			"block/cherry_wood_hanging_sign/jump4"
+		]
+	},
+	"block.chain.fall": {
+		"replace": true,
+		"sounds": [
+			"block/chain/jump1",
+			"block/chain/jump2",
+			"block/chain/jump3",
+			"block/chain/jump4"
 		]
 	},
 	"block.chiseled_bookshelf.fall": {
@@ -281,6 +317,15 @@
 			"jump/gravel4"
 		]
 	},
+	"block.hanging_sign.fall": {
+		"replace": true,
+		"sounds": [
+			"block/hanging_sign/jump1",
+			"block/hanging_sign/jump2",
+			"block/hanging_sign/jump3",
+			"block/hanging_sign/jump4"
+		]
+	},
 	"block.ladder.fall": {
 		"replace": true,
 		"sounds": [
@@ -288,6 +333,15 @@
 			"block/ladder/jump2",
 			"block/ladder/jump3",
 			"block/ladder/jump4"
+		]
+	},
+	"block.lantern.fall": {
+		"replace": true,
+		"sounds": [
+			"block/lantern/jump1",
+			"block/lantern/jump2",
+			"block/lantern/jump3",
+			"block/lantern/jump4"
 		]
 	},
 	"block.mangrove_roots.fall": {
@@ -380,6 +434,15 @@
 			"block/nether_ore/jump4"
 		]
 	},
+	"block.nether_sprouts.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_sprouts/jump1",
+			"block/nether_sprouts/jump2",
+			"block/nether_sprouts/jump3",
+			"block/nether_sprouts/jump4"
+		]
+	},
 	"block.nether_wood.fall": {
 		"replace": true,
 		"sounds": [
@@ -387,6 +450,15 @@
 			"block/nether_wood/jump2",
 			"block/nether_wood/jump3",
 			"block/nether_wood/jump4"
+		]
+	},
+	"block.nether_wood_hanging_sign.fall": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood_hanging_sign/jump1",
+			"block/nether_wood_hanging_sign/jump2",
+			"block/nether_wood_hanging_sign/jump3",
+			"block/nether_wood_hanging_sign/jump4"
 		]
 	},
 	"block.netherite_block.fall": {
@@ -434,6 +506,15 @@
 			"block/pink_petals/jump4"
 		]
 	},
+	"block.powder_snow.fall": {
+		"replace": true,
+		"sounds": [
+			"block/powder_snow/jump1",
+			"block/powder_snow/jump2",
+			"block/powder_snow/jump3",
+			"block/powder_snow/jump4"
+		]
+	},
 	"block.rooted_dirt.fall": {
 		"replace": true,
 		"sounds": [
@@ -441,6 +522,15 @@
 			"block/rooted_dirt/jump2",
 			"block/rooted_dirt/jump3",
 			"block/rooted_dirt/jump4"
+		]
+	},
+	"block.roots.fall": {
+		"replace": true,
+		"sounds": [
+			"block/roots/jump1",
+			"block/roots/jump2",
+			"block/roots/jump3",
+			"block/roots/jump4"
 		]
 	},
 	"block.sand.fall": {
@@ -630,7 +720,7 @@
 			"block/netherwart/jump4"
 		]
 	},
-	"block.roots.fall": {
+	"block.weeping_vines.fall": {
 		"replace": true,
 		"sounds": [
 			"block/roots/jump1",
