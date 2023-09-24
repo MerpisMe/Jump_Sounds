@@ -53,7 +53,7 @@ public abstract class PlayerMixin extends LivingEntity {
 
 	@Inject(method= "playStepSound", at = @At("HEAD"), cancellable = true)
 	public void playStepSound(CallbackInfo ci) {
-		if (this.yOld - this.getY() > 0) {
+		if (this.yOld > this.getY() && !this.onClimbable()) {
 			// stops regular step sound from playing upon landing while moving
 			// like it works on bedrock edition, because it sounds better
 			ci.cancel();
