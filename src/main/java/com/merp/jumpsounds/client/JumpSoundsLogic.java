@@ -1,5 +1,6 @@
 package com.merp.jumpsounds.client;
 
+import com.merp.jumpsounds.SoundRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.LivingEntity;
@@ -10,6 +11,7 @@ public class JumpSoundsLogic {
 
     public static void jump(LivingEntity entity, BlockPos blockPos, BlockState primaryState) {
         if (entity.onGround() && !primaryState.isAir()) {
+            entity.playSound(SoundRegistry.JUMP_GENERIC, 1.0f, 1.0f);
             soundController(entity, blockPos, primaryState);
         }
     }
@@ -24,6 +26,7 @@ public class JumpSoundsLogic {
                 // walking off of multiples of 4 pixels in height
                 return;
             }
+            entity.playSound(SoundRegistry.LAND_GENERIC, 1.0f, 1.0f);
             soundController(entity, blockPos, primaryState);
         }
     }

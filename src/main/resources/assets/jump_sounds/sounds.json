@@ -1,0 +1,8 @@
+{
+	"entity.player.jump": {
+		"sounds": []
+	},
+	"entity.player.land": {
+		"sounds": []
+	}
+}
