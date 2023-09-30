@@ -191,10 +191,10 @@
 	"block.coral.fall": {
 		"replace": true,
 		"sounds": [
-			"block/jump/coral1",
-			"block/jump/coral2",
-			"block/jump/coral3",
-			"block/jump/coral4"
+			"jump/coral1",
+			"jump/coral2",
+			"jump/coral3",
+			"jump/coral4"
 		]
 	},
 	"block.decorated_pot.fall": {

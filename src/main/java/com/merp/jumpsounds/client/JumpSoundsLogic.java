@@ -4,6 +4,7 @@ import com.merp.jumpsounds.SoundRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -35,19 +36,23 @@ public class JumpSoundsLogic {
     // from the code used for the new step sound system introduced in 1.20
 
     public static void soundController(LivingEntity entity, BlockPos blockPos, BlockState blockState) {
+        float volume = entity.getPose().equals(Pose.CROUCHING) ? 0.5F : 1F;
+        if (entity.shouldPlayAmethystStepSound(blockState)) {
+            entity.playAmethystStepSound();
+        }
         if (entity.isInWater()) {
-            playMuffledJumpSound(entity, blockState);
+            playMuffledJumpSound(entity, blockState, volume);
         } else {
             BlockPos blockPos2 = JumpSoundsLogic.getPrimaryJumpSoundBlockPos(entity, blockPos);
             if (!blockPos.equals(blockPos2)) {
                 BlockState blockState2 = entity.level().getBlockState(blockPos2);
                 if (blockState2.is(BlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
-                    playCombinationJumpSounds(entity, blockState2, blockState);
+                    playCombinationJumpSounds(entity, blockState2, blockState, volume);
                 } else {
-                    playJumpSound(entity, blockState2);
+                    playJumpSound(entity, blockState2, volume);
                 }
             } else {
-                playJumpSound(entity, blockState);
+                playJumpSound(entity, blockState, volume);
             }
         }
     }
@@ -61,18 +66,18 @@ public class JumpSoundsLogic {
         return blockPos;
     }
 
-    protected static void playCombinationJumpSounds (LivingEntity entity, BlockState blockState, BlockState blockState2) {
-        playJumpSound(entity, blockState);
-        playMuffledJumpSound(entity, blockState2);
+    protected static void playCombinationJumpSounds (LivingEntity entity, BlockState blockState, BlockState blockState2, float volume) {
+        playJumpSound(entity, blockState, volume);
+        playMuffledJumpSound(entity, blockState2, volume);
     }
 
-    protected static void playMuffledJumpSound (LivingEntity entity, BlockState state){
+    protected static void playMuffledJumpSound (LivingEntity entity, BlockState state, float volume){
         SoundType soundType = state.getSoundType();
-        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.033F, soundType.getPitch() * 0.8f);
+        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.05F * volume, soundType.getPitch() * 0.8f);
     }
 
-    protected static void playJumpSound (LivingEntity entity, BlockState state) {
+    protected static void playJumpSound (LivingEntity entity, BlockState state, float volume) {
         SoundType soundType = state.getSoundType();
-        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.1F, soundType.getPitch());
+        entity.playSound(soundType.getFallSound(), soundType.getVolume() * 0.1F * volume, soundType.getPitch());
     }
 }
