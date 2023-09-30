@@ -35,6 +35,9 @@ public class JumpSoundsLogic {
     // from the code used for the new step sound system introduced in 1.20
 
     public static void soundController(LivingEntity entity, BlockPos blockPos, BlockState blockState) {
+        if (entity.shouldPlayAmethystStepSound(blockState)) {
+            entity.playAmethystStepSound();
+        }
         if (entity.isInWater()) {
             playMuffledJumpSound(entity, blockState);
         } else {

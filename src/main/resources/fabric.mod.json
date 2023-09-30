@@ -18,6 +18,7 @@
       "com.merp.jumpsounds.client.JumpSoundsClient"
     ]
   },
+  "accessWidener": "jump-sounds.accesswidener",
   "mixins": [
     "jump-sounds.mixins.json"
   ],
