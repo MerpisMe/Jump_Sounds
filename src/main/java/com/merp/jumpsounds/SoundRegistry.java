@@ -14,7 +14,7 @@ public final class SoundRegistry {
 
     @NotNull
     public static SoundEvent register(@NotNull String path) {
-        var id = new ResourceLocation(JumpSoundsClient.MODID, path);
+        var id = ResourceLocation.fromNamespaceAndPath(JumpSoundsClient.MODID, path);
         return Registry.register(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));
     }
 

@@ -36,7 +36,7 @@ public class JumpSoundsLogic {
     // from the code used for the new step sound system introduced in 1.20
 
     public static void soundController(LivingEntity entity, BlockPos blockPos, BlockState blockState) {
-        float volume = entity.getPose().equals(Pose.CROUCHING) ? 0.5F : 1F;
+        float volume = entity.getPose().equals(Pose.CROUCHING) ? 0.6666F : 1F;
         if (entity.shouldPlayAmethystStepSound(blockState)) {
             entity.playAmethystStepSound();
         }
